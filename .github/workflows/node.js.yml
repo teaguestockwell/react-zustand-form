@@ -37,5 +37,5 @@ jobs:
       run: |
         git config --global user.name ${{secrets.EMAIL}}
         git config --global user.email ${{secrets.EMAIL}}
-        git remote set-url origin https://${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}@github.com/${repository}
+        git remote set-url origin https://${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}@github.com/${{secrets.USERNAME}}/react-zustand-form
         npm run deploy
