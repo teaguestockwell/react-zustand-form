@@ -9,6 +9,7 @@ export const SubForms = () => {
     <>
       <div style={{textAlign: 'center'}}>{'use form store shallow equality: ==='}</div>
       <div>{valuesString}</div>
+      <div>{'renderedAt: ' + new Date().toISOString()}</div>
     </>
   )
 }
