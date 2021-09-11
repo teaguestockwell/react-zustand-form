@@ -56,6 +56,8 @@ export const HookForm = ({formKey}: {formKey: string}) => {
     <>
       <div style={{textAlign: 'center'}}>{formKey}</div>
 
+      <button onClick={() => useForms.deleteForm(formKey)}>Delete</button>
+
       <form>{formFields.map((k) => getField(k))}</form>
     </>
   )

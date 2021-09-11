@@ -3,8 +3,9 @@ import {contactSchema} from './schemas/contact_schema'
 import {HookForm} from './components/hook_form'
 import {useForms} from './hooks/use_forms'
 import {Card} from './components/card'
-import {SubToFormValidation} from './components/sub_form_validation'
-import {SubToFormValues} from './components/sub_form_fields'
+import {SubFormValidation} from './components/sub_form_validation'
+import {SubFormValues} from './components/sub_form_fields'
+import { SubForms } from './components/sub_forms'
 
 export const App = () => {
   const formKeys = useForms.useAllFormKeys()
@@ -14,9 +15,12 @@ export const App = () => {
   }, [])
 
   return (
+    <>
     <Card>
       <>
-        <div style={{textAlign: 'center'}}>{'sub all forms length equality'}</div>
+        <div style={{textAlign: 'center'}}>{'use forms length equality'}</div>
+
+        <button onClick={useForms.deleteAllForms}>Delete all forms</button>
 
         <button onClick={useForms.addBlankForm}>Add blank form</button>
 
@@ -27,15 +31,20 @@ export const App = () => {
             </Card>
 
             <Card>
-              <SubToFormValues formKey={k} />
+              <SubFormValues formKey={k} />
             </Card>
 
             <Card>
-              <SubToFormValidation formKey={k} />
+              <SubFormValidation formKey={k} />
             </Card>
           </div>
         ))}
       </>
     </Card>
+    
+    <Card>
+      <SubForms/>
+    </Card>
+    </>
   )
 }

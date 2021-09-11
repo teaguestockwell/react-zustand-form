@@ -80,6 +80,25 @@ const updateGlobalState = (
   })
 }
 
+const deleteForm = (key:string) => {
+  const prev = useStore.getState()
+
+  delete prev.validationMap[key]
+  delete prev.valuesMap[key]
+
+  useStore.setState({
+    validationMap: prev.validationMap,
+    valuesMap: prev.valuesMap,
+  })
+}
+
+const deleteAllForms = () => {
+  useStore.setState({
+    validationMap: {},
+    valuesMap: {},
+  })
+}
+
 export const useForms = {
   useStore,
   useFormValues,
@@ -89,4 +108,6 @@ export const useForms = {
   useAllFormKeys: useFormKeys,
   addBlankForm,
   updateGlobalState,
+  deleteForm,
+  deleteAllForms
 }
