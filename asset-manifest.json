@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/tsAppDevelopment.github.io/react-zustand-form/static/js/main.7755a013.chunk.js",
-    "main.js.map": "/tsAppDevelopment.github.io/react-zustand-form/static/js/main.7755a013.chunk.js.map",
+    "main.js": "/tsAppDevelopment.github.io/react-zustand-form/static/js/main.74dfebeb.chunk.js",
+    "main.js.map": "/tsAppDevelopment.github.io/react-zustand-form/static/js/main.74dfebeb.chunk.js.map",
     "runtime-main.js": "/tsAppDevelopment.github.io/react-zustand-form/static/js/runtime-main.c77a29f2.js",
     "runtime-main.js.map": "/tsAppDevelopment.github.io/react-zustand-form/static/js/runtime-main.c77a29f2.js.map",
-    "static/js/2.60fe52fa.chunk.js": "/tsAppDevelopment.github.io/react-zustand-form/static/js/2.60fe52fa.chunk.js",
-    "static/js/2.60fe52fa.chunk.js.map": "/tsAppDevelopment.github.io/react-zustand-form/static/js/2.60fe52fa.chunk.js.map",
+    "static/js/2.c064625a.chunk.js": "/tsAppDevelopment.github.io/react-zustand-form/static/js/2.c064625a.chunk.js",
+    "static/js/2.c064625a.chunk.js.map": "/tsAppDevelopment.github.io/react-zustand-form/static/js/2.c064625a.chunk.js.map",
     "index.html": "/tsAppDevelopment.github.io/react-zustand-form/index.html",
-    "static/js/2.60fe52fa.chunk.js.LICENSE.txt": "/tsAppDevelopment.github.io/react-zustand-form/static/js/2.60fe52fa.chunk.js.LICENSE.txt"
+    "static/js/2.c064625a.chunk.js.LICENSE.txt": "/tsAppDevelopment.github.io/react-zustand-form/static/js/2.c064625a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c77a29f2.js",
-    "static/js/2.60fe52fa.chunk.js",
-    "static/js/main.7755a013.chunk.js"
+    "static/js/2.c064625a.chunk.js",
+    "static/js/main.74dfebeb.chunk.js"
   ]
 }
