@@ -5,9 +5,9 @@ export const SubFormValidation = ({formKey}: {formKey: string}) => {
 
   return (
     <>
-      <div style={{textAlign: 'center'}}>{formKey + ' use form validation equality'}</div>
+      <div style={{textAlign: 'center', marginBottom: 10}}>{formKey + ' validation equality'}</div>
       <div>{'isValid: ' + isValid}</div>
-      <div>{'renderedAt: ' + new Date().toISOString()}</div>
+      <div style={{whiteSpace:'nowrap', marginTop: 10}}>{'rendered: ' + Date.now()}</div>
     </>
   )
 }

@@ -8,6 +8,7 @@ export const Card = ({children}: {children: JSX.Element}) => {
         borderRadius: 10,
         padding: 10,
         margin: 10,
+        overflowX: 'auto',
       }}
     >
       {children}

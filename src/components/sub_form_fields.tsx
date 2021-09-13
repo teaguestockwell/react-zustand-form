@@ -1,15 +1,14 @@
 import {useForms} from 'src/hooks/use_forms'
 
 export const SubFormValues = ({formKey}: {formKey: string}) => {
-  const values = useForms.useFormValues(formKey)
+  const obj = useForms.useFormValues(formKey)
 
-  const valuesString = JSON.stringify(values)
 
   return (
     <>
-      <div style={{textAlign: 'center'}}>{formKey + ' use form values deep equality'}</div>
-      <div>{'values: ' + valuesString}</div>
-      <div>{'renderedAt: ' + new Date().toISOString()}</div>
+      <div style={{textAlign: 'center', marginBottom: 10}}>{formKey + ' values deep equality'}</div>
+      {Object.entries(obj).map(([k,v]) => <div style={{whiteSpace:'nowrap'}}>{`${k}: "${v}"`}</div>)}
+      <div style={{whiteSpace:'nowrap', marginTop: 10}}>{'rendered: ' + Date.now()}</div>
     </>
   )
 }
