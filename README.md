@@ -4,4 +4,4 @@ Using Zustand, Formik, Yup expose custom hooks to subscribe to the state of form
 
 [code sandbox](https://codesandbox.io/s/react-zustand-yup-pmhmo)
 
-[github pages](https://tsappdevelopment.github.io/react-zustand-form/)
+[github pages](https://teaguestockwell.github.io/react-zustand-form/)
